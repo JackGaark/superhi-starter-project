@@ -1,0 +1,85 @@
+body{
+ font-family: Lora;
+ font-size:16px ;
+ background-color: #85144b;
+ color: #ffffff;
+ font-weight: 500;
+ letter-spacing: 2px;
+
+}
+
+h1{
+ font-size: 24px;
+/* margin are the go to property for when we want to create space between elements   */
+ margin-bottom: 5px;
+ font-weight: 700;
+
+}
+
+a{
+/* this is to style the hyperlinks so that they are not in the default blue and underline */
+ color: #ffffff;
+/* this is to make sure it doesn't receive the default underline */
+ text-decoration: none;
+}
+
+
+header{
+/* using the position fixed allows to precisely position the header elements in relation to the brwoser viewport  */
+ position: fixed;
+ top: 20px;
+ left: 20px;
+}
+
+img{
+ width: 100px;
+}
+
+section{
+/*  vh stands for viewport height, meaning it will be relative to the height of our browser window  */
+ height: 100vh;
+ background-image: url(image.jpg);
+/* the background image will cover (get it, COVER) the full width and height without skewing, the proportions are maintained */
+ background-size: cover;
+ background-position: center;
+/* this will fix the bg to the browser viewport rather than to the section, this is what gives us that parallaxy reveal effect!  */
+ background-attachment: fixed;
+}
+
+/* this applies the style to any element in our html with the class attribute "image_2"  */
+.image_2 {
+ background-image: url(image1.jpg);
+}
+.image_3 {
+ background-image: url(image2.jpg);
+}
+.image_4 {
+ background-image: url(image3.jpg);
+}
+
+
+
+footer{
+ position: fixed;
+ bottom: 20px;
+ left: 20px;
+}
+
+/* this is only be applied to a links in the foooter  */
+footer a{
+ margin-right: 2.5px;
+ margin-left: 2.5px;
+}
+
+/* we can apply styles to elements based on state (hover, click, etc)
+this is called a pseudo selector */
+a:hover {
+ color: #dddddd;
+}
+
+@media (max-width: 800px) {
+ section {
+   background-attachment: scroll;
+   height: 60vw;
+ }
+}

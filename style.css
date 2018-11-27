@@ -5,7 +5,6 @@ body{
  color: #ffffff;
  font-weight: 500;
  letter-spacing: 2px;
-
 }
 
 h1{
@@ -13,7 +12,6 @@ h1{
 /* margin are the go to property for when we want to create space between elements   */
  margin-bottom: 5px;
  font-weight: 700;
-
 }
 
 a{
@@ -31,32 +29,32 @@ header{
  left: 20px;
 }
 
-img{
- width: 100px;
-}
-
 section{
 /*  vh stands for viewport height, meaning it will be relative to the height of our browser window  */
- height: 100vh;
- background-image: url(image.jpg);
+  height: 100vh;
+
 /* the background image will cover (get it, COVER) the full width and height without skewing, the proportions are maintained */
- background-size: cover;
- background-position: center;
+  background-size: cover;
+  background-position: center;
 /* this will fix the bg to the browser viewport rather than to the section, this is what gives us that parallaxy reveal effect!  */
- background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 /* this applies the style to any element in our html with the class attribute "image_2"  */
-.image_2 {
- background-image: url(image1.jpg);
-}
-.image_3 {
- background-image: url(image2.jpg);
-}
-.image_4 {
- background-image: url(image3.jpg);
-}
 
+
+.sb_1 {
+  background-image: url(../images/sb_1.jpg);
+}
+.sb_2 {
+  background-image: url(../images/sb_2.jpg);
+}
+.sb_3 {
+  background-image: url(../images/sb_3.jpg);
+}
+.sb_4 {
+  background-image: url(../images/sb_4.jpg);
+}
 
 
 footer{
